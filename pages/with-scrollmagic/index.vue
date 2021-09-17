@@ -63,11 +63,11 @@ export default {
         // markers: true,
       });
 
-      function render(self) {
+      render();
+      function render() {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.drawImage(images[airpods.frame], 0, 0);
       }
-      render();
 
 
       this.$gsap.timeline({
